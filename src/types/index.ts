@@ -9,6 +9,12 @@ export interface Product {
   description: string;
   badge?: string;
   stock: number;
+  specifications?: {
+    [key: string]: string;
+  };
+  materials?: string[];
+  careInstructions?: string[];
+  sku?: string;
 }
 
 export interface Review {
